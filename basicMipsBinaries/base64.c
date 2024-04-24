@@ -1,6 +1,8 @@
 
-#include "stdlib.h"
-#include "liballoc.h"
+//#include "stdlib.h"
+//#include "liballoc.h"
+#include <stdlib.h>
+#define TEST_MAIN
 
 static const unsigned char base64_table[65] =
 	"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
