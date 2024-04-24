@@ -1,9 +1,8 @@
 
-//#include "stdlib.h"
-//#include "liballoc.h"
+#include <liballoc.h>
 #include <stdlib.h>
 #include <stdio.h>
-//#include <fileapi.h>
+
 #define TEST_MAIN
 
 static const unsigned char base64_table[65] =
