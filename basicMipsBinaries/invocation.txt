@@ -1,0 +1,4 @@
+&"C:\Program Files\LLVM\bin\clang.exe" -O3 -S -target mips -mcpu=mips32 base64.c liballoc.c
+
+mips-linux-gnu-gcc -O3 -S -mfp32 -march=R2000 base64.c liballoc.c
+mips-linux-gnu-gcc -c -EB base64.c liballoc.c
