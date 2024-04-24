@@ -3,7 +3,7 @@
 //#include "liballoc.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <fileapi.h>
+//#include <fileapi.h>
 #define TEST_MAIN
 
 static const unsigned char base64_table[65] =
@@ -115,7 +115,8 @@ int main(int argc, char *argv[])
 		printf("Usage: base64 <encode|decode> <in file> <out file>\n");
 		return -1;
 	}
-	buf = readfile(argv[2], &len);
+	//buf = readfile(argv[2], &len);
+	memccpy(buf,argv[2],&len);
 	if (buf == NULL)
 		return -1;
 	if (strcmp(argv[1], "encode") == 0)
